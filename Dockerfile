@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
   --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /root/python
-RUN ln -s /usr/bin/python2.7.distrib /usr/bin/python
+# old? RUN ln -s /usr/bin/python2.7.distrib /usr/bin/python
 
 WORKDIR /root
 
